@@ -14,3 +14,16 @@ docker-compose up
 ```bash
 docker-compose -f docker-compose-webrick.yml up
 ```
+
+## How to create key files?
+Browser will block self signed certificates, but for development purpose:
+```bash
+./gen_keys.sh
+```
+
+For production use [Let's Encrypt](https://letsencrypt.org/pt-br/)
+
+## Lazy to build and up...
+```bash
+./run.sh
+```
